@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: cyan;
+
+}
+header img{
+    max-width: 30px;
+    
+}
+
+#contenedor-pagina{
+    width: 100%;
+    height: 500px;
+    background-color: darkmagenta;
+
+    /*Lo mero importante: VAMOS A DECIRLE AL CONTENEDOR-PAGINA, 
+    CÓMO POSICIONAR A SUS ELEMENTOS HIJOS, Y CÓMO DESPLAZARSE DENTRO 
+    DE ÉL
+    ;*/
+    display: flex;
+    flex-direction: row;  
+}
+
+#sidebar{
+    width: 200px;
+    background-color: darkgoldenrod;
+    /*Así le decimos a un elemento que tendrá disposición flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main{
+    flex-grow: 1;
+    background-color: brown;
+}
+
+#datos-usu{
+    width: 100%;
+    background-color:yellow;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor_datos{
+    width: 60px;
+    height: 100px;
+}
+
+#datos1{
+    flex-grow: 1;
+    background-color: crimson;
+}
+#datos2{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
